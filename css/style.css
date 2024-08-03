@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-item: center;
+  z-index: 10000;
+}
+
+header .logo{
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+header ul{
+  position: relative;
+  display: flex;
+  gap: 40px;
+}
+
+header ul li{
+  list-style: none;
+}
+
+header ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.25em;
+}
+
+header ul li.active a,
+header ul li:hover a{
+  color: #30fe6c;
+}
+
+#home{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
+}
+
+#home .content{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 650px;
+  z-index: 10;
+}
+
+#home .content h2{
+  position: relative;
+  font-size: 5em;
+  color: #30fe6c;
+}
+
+#home .content p{
+  position: relative;
+  color: #fff;
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
+
+.btn{
+  position: relative;
+  display: inline-block;
+  font-size: 1.25em;
+  max-width: 200px;
+  background: #30fe6c;
+  color: #222;
+  text-aling: center;
+  padding: 18px 30px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+}
