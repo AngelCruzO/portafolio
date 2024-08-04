@@ -1,9 +1,16 @@
 *{
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
   box-sizing: border-box;
 }
 
+.center{
+  width: 100%;
+  text-align: center;
+}
+
+/*Header*/
 header{
   position: fixed;
   top: 0;
@@ -14,6 +21,7 @@ header{
   justify-content: space-between;
   align-item: center;
   z-index: 10000;
+  backdrop-filter: blur(20px);
 }
 
 header .logo{
@@ -46,6 +54,7 @@ header ul li:hover a{
   color: #30fe6c;
 }
 
+/*HOME*/
 #home{
   position: relative;
   width: 100%;
@@ -55,6 +64,18 @@ header ul li:hover a{
   justify-content: space-between;
   align-items: center;
   padding: 100px;
+}
+
+#home::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50vw;
+  height: 25vw;
+  background: #30fe6c;
+  border-top-right-radius: 25vw;
+  border-top-left-radius: 25vw;
 }
 
 #home .content{
@@ -91,4 +112,52 @@ header ul li:hover a{
   font-weight: 500;
   letter-spacing: 0.05em;
   text-decoration: none;
+  margin-top: 10px;
+}
+
+#home .men{
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+  max-height: 90vh;
+}
+
+/*TECH*/
+#tech,
+#projects,
+#contact{
+  position: relative;
+  background: #34353a;
+  padding: 120px 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#tech{
+  min-height: 50vh;
+}
+
+#projects,
+#contact{
+  min-height: 100vh;
+}
+
+.secText{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.secText h2{
+  font-size: 3em;
+  color: #fff;
+}
+
+#projects{
+  background: #2e2f34;
+  text-align: center;
 }
