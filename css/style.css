@@ -162,6 +162,29 @@ header ul li:hover a{
   text-align: center;
 }
 
+/*TECNOLOGIAS*/
+.slider{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.slider .slide-track{
+  padding-top: 30px;
+  display: flex;
+  animation: scroll 40s linear infinite;
+  width: calc(100px * 18);
+} 
+
+.slider .slide{
+  width: 100px;
+}
+
+.slider .slidew img{
+  width: 100%;
+}
+
+
 /*RESPONSIVE*/
 @media (max-width: 900px){
 
@@ -248,9 +271,9 @@ header ul li:hover a{
   header.active ul{
     position: fixed;
     left: 0;
-    top: 84px;
+    top: 77px;
     width: 100%;
-    height: calc(100vh - 84px);
+    height: calc(100vh - 77px);
     background: rgba(50,50,50,0.95);
     display: flex;
     justify-content: center;
@@ -282,5 +305,16 @@ header ul li:hover a{
 
   #home .men{
     height: 40vh;
+  }
+}
+
+/*ANIMACIONES*/
+@keyframes scroll{
+  0%{
+    transform: translateX(0);
+  }
+
+  100%{
+    transform: translateX(calc(-100px * 18));
   }
 }
