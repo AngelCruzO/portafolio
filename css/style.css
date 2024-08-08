@@ -64,18 +64,7 @@ header ul li:hover a{
   justify-content: space-between;
   align-items: center;
   padding: 100px;
-}
-
-#home::before{
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 50vw;
-  height: 25vw;
-  background: #30fe6c;
-  border-top-right-radius: 25vw;
-  border-top-left-radius: 25vw;
+  overflow: hidden; 
 }
 
 #home .content{
@@ -117,10 +106,20 @@ header ul li:hover a{
 
 #home .men{
   position: absolute;
-  bottom: 0;
+  bottom: 20;
   right: 100px;
   max-height: 90vh;
 }
+
+#home .objects{
+    position: absolute;
+    width: 75%;
+    right: -15%;
+    bottom: 50%;
+    margin-bottom: -35%;
+    animation: rotate 25s linear infinite, hue-rotate 28s linear infinite;
+  }
+
 
 /*TECH*/
 #tech,
@@ -162,31 +161,25 @@ header ul li:hover a{
   text-align: center;
 }
 
+
 /*TECNOLOGIAS*/
-.slider{
-  width: 100%;
-  height: auto;
+.logos{
   overflow: hidden;
+  padding: 60px 0;
+  white-space: nowrap;
+}
+.logos-slide{
+  display: inline-block;
+  animation: 25s slide infinite linear;
 }
 
-.slider .slide-track{
-  padding-top: 30px;
-  display: flex;
-  animation: scroll 40s linear infinite;
-  width: calc(100px * 18);
-} 
-
-.slider .slide{
+.logos-slide img{
   width: 100px;
+  margin: 0 25px;
 }
-
-.slider .slidew img{
-  width: 100%;
-}
-
 
 /*RESPONSIVE*/
-@media (max-width: 900px){
+@media (max-width:1200px){
 
   header{
     padding: 20px 50px;
@@ -209,10 +202,12 @@ header ul li:hover a{
 
   #home .men{
     position: absolute;
-    height: 50vh;
+    height: 70vh;
     right: 0;
+    bottom: 0;  
   }
 
+  
   #home .secText h2{
     font-size: 2em;
     text-align: center;
@@ -287,7 +282,6 @@ header ul li:hover a{
     font-size: 2em;
   }
 
-
 }
 
 @media (max-width: 700px){
@@ -304,17 +298,37 @@ header ul li:hover a{
   }
 
   #home .men{
-    height: 40vh;
+    height: 60vh;
   }
 }
 
 /*ANIMACIONES*/
-@keyframes scroll{
-  0%{
+@keyframes slide{
+  from{
     transform: translateX(0);
   }
 
+  to{
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes rotate{
+  0%{
+    transform: rotate(0deg);
+  }
+
   100%{
-    transform: translateX(calc(-100px * 18));
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes hue-rotate{
+  0%{
+    filter: hue-rotate(0deg);
+  }
+
+  100%{
+    filter: hue-rotate(360deg);
   }
 }
