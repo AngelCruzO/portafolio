@@ -23,6 +23,7 @@ images.forEach(image => {
   const imgElement = document.createElement('img');
 
   imgElement.src = `assets/images/tech/${image}.svg`;
+  imgElement.alt = `logo ${image}`
 
   container.appendChild(imgElement);
 });

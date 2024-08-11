@@ -107,8 +107,9 @@ header ul li:hover a{
 #home .men{
   position: absolute;
   bottom: 20;
-  right: 100px;
+  right: 50px;
   max-height: 90vh;
+  filter: drop-shadow(0 0 10px rgba(255,255,255,.8));
 }
 
 #home .objects{
@@ -178,8 +179,54 @@ header ul li:hover a{
   margin: 0 25px;
 }
 
+/*PROYECTOS*/
+#projects .content{
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  align-items: center;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.card img{
+  height: auto;
+  width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card{
+  padding: 25px;
+  background: #12141c;
+  border-radius: 0.5rem;
+  transition: all 0.40s ease;
+  color: #fff;
+}
+
+.card-content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.card-title{
+  font-size: 25px;
+  font-weight: 700;
+  padding: 20px 0;
+}
+
+.card-description{
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-align: justify;
+  padding: 15px 0;
+}
+
 /*RESPONSIVE*/
-@media (max-width:1200px){
+@media (360px <= width <= 1200px){
 
   header{
     padding: 20px 50px;
@@ -284,7 +331,7 @@ header ul li:hover a{
 
 }
 
-@media (max-width: 700px){
+@media (360px <= width <= 800px){
   
   #home .content h2{
     font-size: 3em;
@@ -299,6 +346,13 @@ header ul li:hover a{
 
   #home .men{
     height: 60vh;
+  }
+
+  #home .objects{
+    width: 80%;
+    right: -10%;
+    bottom: 15%;
+    margin-bottom: -20%;
   }
 }
 
