@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <meta name="description" content="Portafolio de proyectos y contacto para Angel Cruz O.">
   <title>AngelCruzO - Portafolio</title>
   <link rel="stylesheet" href="css/style.css" media="all">
-</head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
 <body>
 
   <header class="logo">
@@ -80,9 +81,53 @@
     <div class="secText">
       <h2>Contacto</h2>
     </div>
+    <!--content-->
+    <div class="content">
+      <!--left-side-->
+      <div class="left-side">
+	<div class="details">
+	  <i class="fa-solid fa-location-dot"></i>
+	  <h2>México, C.D.M.X</h2>
+	</div>
+	<div class="details">
+	  <i class="fa-solid fa-envelope"></i>
+	  <h2>angelco.uacm@gmail.com</h2>
+	  <h2>angel.cruz.olvera@estudiante.uacm.edu.mx</h2>
+	</div>
+	<div class="details">
+	  <div class="redes">
+	    <i class="fa-brands fa-square-facebook"></i>
+	    <i class="fa-brands fa-square-instagram"></i>
+	    <i class="fa-brands fa-square-x-twitter"></i>
+	    <i class="fa-brands fa-linkedin"></i>
+	    <i class="fa-brands fa-square-github"></i>
+	  </div>
+	</div>
+      </div>
+      <!--right-side-->
+      <div class="right-side">
+        <div class="topic-text">Enviame un mensaje</div>
+	<p>Si tienes alguna duda, contactarme para algun proyecto o simplemente hacer networking, puedes enviar en mensaje por medio del siguiente formulario.</p>
+      
+      	<!--form-->
+      	<form action="#">
+	  <div class="input-box">
+	     <input type="text" placeholder="Nombre">
+	  </div>
+	  <div class="input-box">
+	     <input type="text" placeholder="Email">
+	  </div>
+	  <div class="input-box message-box">
+	     <textarea></textarea>
+	  </div>
+	  <div class="button">
+	     <button class="btn" type="submit">Enviar</button>
+	  </div>
+        </form>
+      </div>
+    </div>
   </section>
 
   <script src="js\logic.js"></script>
-
-</body>
+  </body>
 </html>

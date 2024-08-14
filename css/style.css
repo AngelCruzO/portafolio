@@ -96,12 +96,13 @@ header ul li:hover a{
   max-width: 200px;
   background: #30fe6c;
   color: #222;
-  text-aling: center;
+  text-align: center;
   padding: 18px 30px;
   font-weight: 500;
   letter-spacing: 0.05em;
   text-decoration: none;
   margin-top: 10px;
+  outline: none;
 }
 
 #home .men{
@@ -225,6 +226,104 @@ header ul li:hover a{
   padding: 15px 0;
 }
 
+/*CONTACTO*/
+#contact .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#contact .content .left-side{
+  width: 25%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+
+#contact .content .left-side::before{
+  content: '';
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #30fe6c;
+}
+
+.content .left-side .details{
+  margin: 14px;
+  text-align: center;
+}
+
+#contact .content .left-side .details i{
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.content .left-side h2{
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.left-side .details .redes{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+#contact .content .right-side{
+  width: 75%;
+  margin-left: 75px;
+}
+
+.content .right-side .topic-text{
+  font-size: 23px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.right-side .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+
+.right-side .input-box input,textarea{
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 19px;
+  background: #aca8a8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+
+.right-side .message-box{
+  min-height: 110px;
+  margin-top: 6px;
+}
+
+.right-side .button{
+  desplay: inline-block;
+  margin-top: 6px;
+}
+
+.right-side .button button{
+  outline: none;
+}
+  
+
 /*RESPONSIVE*/
 @media (360px <= width <= 1200px){
 
@@ -337,13 +436,6 @@ header ul li:hover a{
     font-size: 3em;
   }
 
-  #home::before{
-    width: 80vw;
-    height: 40vw;
-    border-top-right-radius: 80vw;
-    border-top-left-radius: 80vw
-  }
-
   #home .men{
     height: 60vh;
   }
@@ -354,6 +446,29 @@ header ul li:hover a{
     bottom: 15%;
     margin-bottom: -20%;
   }
+
+  #contact .content{
+    flex-direction: column-reverse;
+  }
+
+  #contact .content .left-side{
+    width: 100%;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #contact .content .left-side::before{
+    display: none
+  }
+
+  #contact .content .right-side{
+    width: 100%;
+    margin-left: 0;
+  }
+
+
 }
 
 /*ANIMACIONES*/
