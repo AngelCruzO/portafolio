@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
+  font-family: "Fira Code", monospace;
 }
 
 .center{
@@ -98,7 +101,7 @@ header ul li:hover a{
   color: #222;
   text-align: center;
   padding: 18px 30px;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.05em;
   text-decoration: none;
   margin-top: 10px;
@@ -250,7 +253,7 @@ header ul li:hover a{
   position: absolute;
   height: 70%;
   width: 2px;
-  right: -15px;
+  right: -30px;
   top: 50%;
   transform: translateY(-50%);
   background: #30fe6c;
@@ -263,13 +266,23 @@ header ul li:hover a{
 
 #contact .content .left-side .details i{
   font-size: 40px;
-  color: #fff;
+  color: #30fe6c;
   margin-bottom: 10px;
 }
 
-.content .left-side h2{
-  font-size: 18px;
+.rotate{
+  color: #30fe6c;
+  animation: hue-rotate 28s linear infinite;
+}
+
+.left-side .details h2{
+  font-size: 20px;
   font-weight: 500;
+  color: #fff;
+}
+
+.left-side .details h3{
+  font-size: 13px;
   color: #fff;
 }
 
@@ -281,16 +294,47 @@ header ul li:hover a{
   gap: 15px;
 }
 
+.redes i{
+  filter: drop-shadow(0 0 4px rgba(255,255,255,.6));
+}
+
+
+.fa-square-instagram::before{
+  content: '';
+  background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.fa-square-x-twitter::before,
+.fa-square-github::before{
+  content: '';
+  color: #000;
+}
+
+.fa-linkedin::before{
+  content:'';
+  color: #0966c3;
+}
+
 #contact .content .right-side{
   width: 75%;
   margin-left: 75px;
 }
 
-.content .right-side .topic-text{
+.right-side .topic-text{
   font-size: 23px;
   font-weight: 600;
-  color: #fff;
+  color: #30fe6c;
 }
+
+.right-side p{
+  font-size: 16px;
+  color: #fff;
+  margin-top: 10px;
+}
+
 
 .right-side .input-box{
   height: 50px;
@@ -470,6 +514,21 @@ header ul li:hover a{
 
 
 }
+
+@media (360px <= width <= 600px){
+
+  #home .men{
+    height: 50vh;
+  }
+}
+
+@media (360px <= width <= 480px){
+  #home .men{
+    display: none;
+  }
+}
+
+
 
 /*ANIMACIONES*/
 @keyframes slide{
