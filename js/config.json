@@ -8,7 +8,7 @@
     "project_1": {
       "name": "BodyScan",
       "description": "Sistema de analisis de marcha humana, para pacientes con alguna deficiencia",
-      "repo": "https://github.com/AngelCruzO/KinectMatlab"
+      "github": "https://github.com/AngelCruzO/KinectMatlab"
     },
     "project_2": {
       "name": "Campaña COVID",

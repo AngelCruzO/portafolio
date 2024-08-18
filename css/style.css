@@ -185,7 +185,7 @@ header ul li:hover a{
 
 /*PROYECTOS*/
 #projects .content{
-  display: flex;
+  display: grid; 
   grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   align-items: center;
   gap: 2rem;
@@ -193,7 +193,7 @@ header ul li:hover a{
 }
 
 .card img{
-  height: auto;
+  height: 200px;
   width: 100%;
   border-radius: 0.5rem;
   margin-bottom: 1.5rem;
@@ -205,6 +205,7 @@ header ul li:hover a{
   border-radius: 0.5rem;
   transition: all 0.40s ease;
   color: #fff;
+  height: auto;
 }
 
 .card-content{
@@ -213,6 +214,7 @@ header ul li:hover a{
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 1rem;
+  height: 250px;
 }
 
 .card-title{
@@ -227,6 +229,11 @@ header ul li:hover a{
   letter-spacing: 1px;
   text-align: justify;
   padding: 15px 0;
+}
+
+.card-footer{
+  justify-content: space-between;
+  height: 100px
 }
 
 /*CONTACTO*/
