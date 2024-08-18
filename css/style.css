@@ -218,9 +218,9 @@ header ul li:hover a{
 }
 
 .card-title{
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 700;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .card-description{
@@ -232,8 +232,11 @@ header ul li:hover a{
 }
 
 .card-footer{
+  display: flex;
   justify-content: space-between;
-  height: 100px
+  height: 100px;
+  gap: 15px;
+  padding: 15px 0;
 }
 
 /*CONTACTO*/
