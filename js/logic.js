@@ -45,34 +45,35 @@ fetch('js/config.json').then(response => {
   var copy = container.cloneNode(true);
   document.querySelector('.logos').appendChild(copy);
 
-  for(const key in projects){
-    if(projects.hasOwnProperty(key)){
-      const project = projects[key];
 
-      const card = document.createElement('div');
-      card.classList.add('card');
+for (const key in projects) {
+  if (projects.hasOwnProperty(key)) {
+    const project = projects[key];
 
-      let cardContent = '<img src="assets/images/default.jpg" alt="Default image">';
-      cardContent += '<div class="card-content">';
-      cardContent += '<div class="card-title"><h3>${project.name}</h3></div>';
-      cardContent += '<div class="card-description"><p>${project.description}</p></div>';
-      cardContent += '<div class="card-footer">';
+    const card = document.createElement('div');
+    card.classList.add('card');
 
-      if(project.web){
-	cardContent += '<a class="btn" href="${project.web}" target="_blank">Demo</a>';
-      }
+    let cardContent = `<img src="assets/images/default.jpg" alt="Default image">`;
+    cardContent += `<div class="card-content">`;
+    cardContent += `<div class="card-title"><h3>${project.name}</h3></div>`;
+    cardContent += `<div class="card-description"><p>${project.description}</p></div>`;
+    cardContent += `<div class="card-footer">`;
 
-      if(project.github){
-	cardContent += '<a class="btn" href="${project.github}" target="_blank">Github</a>';
-      }
-
-      cardContent += '</div></div>';
-
-      card.innerHTML = cardContent;
-
-      contentProjects.appendChild(card);
+    if (project.web) {
+      cardContent += `<a class="btn" href="${project.web}" target="_blank">Demo</a>`;
     }
+
+    if (project.github) {
+      cardContent += `<a class="btn" href="${project.github}" target="_blank">Github</a>`;
+    }
+
+    cardContent += `</div></div>`;
+
+    card.innerHTML = cardContent;
+
+    contentProjects.appendChild(card);
   }
+}
 
 }).catch(error => {
   console.error('Hay un error en la operación fetch:', error);
