@@ -28,7 +28,7 @@ fetch('js/config.json').then(response => {
   return response.json();
 }).then( data => {
   console.log(data);
-  const images = data[0]['images']
+  const images = data[0].images
  const imgElement = document.createElement('img');
 
   imgElement.src = `assets/images/tech/${image}.svg`;
