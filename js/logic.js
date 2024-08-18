@@ -31,3 +31,13 @@ images.forEach(image => {
 var copy = container.cloneNode(true);
 document.querySelector('.logos').appendChild(copy);
 
+fetch('js/config.json').then(response => {
+  if(!response.ok){
+    throw new Error("La respuesta no fue satisfactoria");
+  }
+  return response.json();
+}).then( data => {
+  console.log(data);
+}).catch(error => {
+  console.error('Hay un error en la operación fetch:', error);
+});

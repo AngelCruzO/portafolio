@@ -1,0 +1,42 @@
+[{
+  "images": ["Azure","C","C++","CSS3","Github","HTML5",
+             "Markdown","Materialize","MATLAB","MySQL",
+	     "PHP","Postman","Python","SQLServer","Vim",
+	     "VS","VSCode"],
+  "projects":{
+    "project_1": {
+      "name": "BodyScan",
+      "description": "Sistema de analisis de marcha humana, para pacientes con alguna deficiencia",
+      "repo": "https://github.com/AngelCruzO/KinectMatlab"
+    },
+    "project_2":{
+      "name": "Campaña COVID",
+      "description": "Clon de pagina de campaña de vacunación de COVID-19",
+      "web": "https://angelcruzo.github.io/vaccination-COVID/",
+      "github": "https://github.com/AngelCruzO/vaccination-COVID"
+
+    },
+    "project_3":{
+      "name": "Pokedex LaunchX",
+      "description": "Pokedex con buscador con 'estilo' carta, llamando a la Poke API",
+      "web": "https://angelcruzo.github.io/pokedex-LaunchX/",
+      "github": "https://github.com/AngelCruzO/pokedex-LaunchX"
+  },
+  "project_4":{
+    "name": "Pasteleria Via Lactea",
+    "description": "Sitio web para una pasteleria, con landing page, pagina de pedidos y administrador",
+    "web": "https://pastelerialaunchx120.netlify.app",
+    "github": "https://github.com/AngelCruzO/Pasteleria-ViaLactea-VueJS"
+  },
+  "project_5":{
+    "name": "Serpientes y Guitarras",
+    "description": "Juego de mesa serpientes y escaleras, con tematica de rock en español, diseñado con drag and drop",
+    "github": "https://github.com/AngelCruzO/juegoDeMesa"
+  },
+  "project_6":{
+    "name": "Cinema Bot",
+    "description": "Chat bot de peliculas, para despliegue en Microsoft Azure",
+    "github": "https://github.com/AngelCruzO/CinemaBot"
+  }
+}
+]
