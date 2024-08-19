@@ -87,19 +87,21 @@
 	<p>Si tienes alguna duda, contactarme para algun proyecto o simplemente hacer networking, puedes enviar en mensaje por medio del siguiente formulario.</p>
       
       	<!--form-->
-      	<form action="#">
+	<form action="https://formsubmit.co/angelco.uacm@gmail.com " method="POST">
 	  <div class="input-box">
-	     <input type="text" placeholder="Nombre">
+	     <input type="text" placeholder="Nombre" name="nombre">
 	  </div>
 	  <div class="input-box">
-	     <input type="text" placeholder="Email">
+	     <input type="text" placeholder="Email" name="email">
 	  </div>
 	  <div class="input-box message-box">
-	     <textarea></textarea>
+	     <textarea name="mensaje"></textarea>
 	  </div>
 	  <div class="button">
 	     <button class="btn" type="submit">Enviar</button>
 	  </div>
+          <input type="hidden" name="_subject" value="Nuevo mensaje recibido">
+	  <input type="hidden" name="_captcha" value="false">
         </form>
       </div>
     </div>
