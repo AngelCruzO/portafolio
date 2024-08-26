@@ -37,7 +37,11 @@
       "name": "Cinema Bot",
       "description": "Chat bot de peliculas, para despliegue en Microsoft Azure",
       "github": "https://github.com/AngelCruzO/CinemaBot"
-    }
+    },
+    "project_7":{
+      "name": "Brujito",
+      "description": "Bot de Discord para el server Brujeriatech, utilizado en soporte y recompensas de Twitch",
+      "github": "https://github.com/AngelCruzO/botDiscord"
   }
 }]
 
