@@ -15,17 +15,13 @@ menuToggle.onclick = function(){
 }
 
 
-/*const images = ['Azure','C','C++','CSS3','Git','GitHub','HTML5','Markdown','Materialize','MATLAB','MySQL','PHP','Postman','Python','SQLServer','Vim','VS','VSCode'];*/
-
-
 fetch('js/config.json').then(response => {
   if(!response.ok){
     throw new Error("La respuesta no fue satisfactoria");
   }
   return response.json();
 }).then( data => {
-  
-  console.log(data);
+ 
   const container = document.querySelector('.logos-slide');
   const contentProjects = document.querySelector('#projects .content');
 

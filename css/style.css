@@ -328,6 +328,11 @@ header ul li:hover a{
   color: #0966c3;
 }
 
+.fa-youtube::before{
+  content:'';
+  color: #fc0200;
+}
+
 #contact .content .right-side{
   width: 75%;
   margin-left: 75px;
